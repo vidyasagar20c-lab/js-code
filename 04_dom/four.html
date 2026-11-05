@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codes</title>
+</head>
+<body>
+    <ul class="langauge">
+<li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLangaguge(langName){
+        const li = craeteElement("li")
+       li.appendChild(document.createTextNode(langName))
+       document.querySelector('.language').appendChild(li)
+    }
+    addOptiLangauge('golang')
+</script>
+</html>

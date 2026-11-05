@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+}
+ body{ 
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+} 
+ .canvas{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+} 
+#gray{
+    width: 100px;
+    height: 100px;
+    background-color:gray ;
+    border: 5px solid black;
+    margin: 10px 10px;
+}
+#white {
+    width: 100px;
+    height: 100px;
+    background-color:white ;
+    border: 5px solid black;
+    margin: 10px 10px;
+}
+#blue {
+    width: 100px;
+    height: 100px;
+    background-color:blue ;
+    border: 5px solid black;
+    margin: 10px 10px;
+}
+#yellow{
+    width: 100px;
+    height: 100px;
+    background-color:yellow ;
+    border: 5px solid black;
+    margin: 10px 10px;
+}
+#red{
+    width: 100px;
+    height: 100px;
+    background-color:red ;
+    border: 5px solid black;
+    margin: 10px 10px;
+}
