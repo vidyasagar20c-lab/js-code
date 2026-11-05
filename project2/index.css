@@ -1,0 +1,9 @@
+body{
+    background-color: gray;
+}
+.btn{
+    font-weight:bold;
+}
+#result{
+    color: white;
+}
