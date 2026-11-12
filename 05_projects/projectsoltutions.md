@@ -164,4 +164,63 @@ newGameButton.addEventListener('click',function(e){
     palyGame = true
 })
 }
+```
 
+## project 5 soltution
+```javascript
+const randomColor = function () {
+    const hex = '0123456789ABCDEF'
+    let color = '#'
+    for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)]
+    }
+    return color
+}
+let intervalId
+console.log(randomColor())
+const startChangeColor = function(){
+
+ if(!intervalId){
+    intervalId = setInterval(changrbgColor,1000)
+ }
+function changrbgColor(){
+    document.body.style.backgroundColor = randomColor()
+
+}    
+}
+
+const stopChangeColor = function(){
+    clearInterval(intervalId)
+    intervalId = null;
+}
+
+document.querySelector('#start').addEventListener
+('click',startChangeColor)
+
+document.querySelector('#stop').addEventListener
+('click',stopChangeColor)
+
+```
+
+## project 6 soltution
+```javascript
+
+const insert = document.getElementById("insert")
+
+window.addEventListener('keyDown',(e) =>{
+    insert.innerHTML = `
+    <div class= "color">
+    <table>
+  <tr>
+    <th>Key</th>
+    <th>Keycode</th>
+    <th>code</th>
+  </tr>
+  <tr>
+    <td>${e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+    </div>`
+})
